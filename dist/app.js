@@ -24,7 +24,6 @@ dbconnect_1.default();
 var app = express_1.default();
 // const LocalStrategy = import('passport-local').Strategy;
 app.use(cors_1.default());
-// app.options('*', cors());
 // view engine setup
 app.set('views', path_1.default.join(__dirname, '../', 'views'));
 app.set('view engine', 'ejs');
@@ -40,8 +39,8 @@ app.use(express_session_1.default({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        expires: 600000
-    }
+        expires: 600000,
+    },
 }));
 // This middleware will check if user's cookie is still saved in browser and user is not set, then automatically log the user out.
 // This usually happens when you stop your express server after login, your cookie still remains saved in the browser.
