@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Agro-world</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+  <link rel="icon" href="./images/AGRO2.png">
+  <!-- <link rel="stylesheet" href="index1.ejs"> -->
+
+	<!-- CSS
+	============================================ -->
+	<!-- Bootstrap CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- FontAwesome CSS -->
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Elegent CSS -->
+	<link href="./css/elegent.min.css" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link href="./css/plugins.css" rel="stylesheet">
+
+	<!-- Helper CSS -->
+	<link href="./css/helper.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link href="./css/main.css" rel="stylesheet">
+
+	<!-- Modernizer JS -->
+	<script src="./js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body>
+
+	<!--=============================================
+	=            Header         =
+	=============================================-->
+
+
+	<header>
+		<!--=======  header top  =======-->
+
+		<div class="header-top pt-10 pb-10 pt-lg-10 pb-lg-10 pt-md-10 pb-md-10">
+			<!-- <div class="container">
+
+					</div>  -->
+				</div>
+			</div>
+		</div>
+
+		<!--=======  End of header top  =======-->
+
+		<!--=======  header bottom  =======-->
+
+		<div class="header-bottom header-bottom-one header-sticky">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 col-xs-12 text-lg-left text-md-center text-sm-center">
+						<!-- logo -->
+						<div class="logo mt-15 mb-15">
+							<a href="index1.ejs">
+								<img src="images/AGRO2.png" class="img-fluid" alt="">
+							</a>
+						</div>
+						<!-- end of logo -->
+					</div>
+					<div class="col-md-9 col-sm-12 col-xs-12">
+						<div class="menubar-top d-flex justify-content-between align-items-center flex-sm-wrap flex-md-wrap flex-lg-nowrap mt-sm-15">
+							<!-- header phone number -->
+							<div class="header-contact d-flex">
+								<div class="phone-icon">
+									<img src="./images/icon-phone.png" class="img-fluid" alt="">
+								</div>
+								<div class="phone-number">
+									 <span class="number"> Phone: +234-813-6300-744  |  +234-816-5051-594  |  +234-810-3612-164</span>
+								</div>
+							</div>
+
+							<!-- shopping cart -->
+							<!-- <div class="shopping-cart" id="shopping-cart">
+								<a href="/cart">
+									<div class="cart-icon d-inline-block">
+										<span class="icon_bag_alt"></span>
+									</div>
+									<div class="cart-info d-inline-block">
+										<p>Shopping Cart
+											<span>
+												0 items - $0.00
+											</span>
+										</p>
+									</div>
+								</a> -->
+							<!-- end of shopping cart -->
+
+
+							<!-- </div> -->
+						</div>
+
+						<!-- navigation section -->
+                        <div class="main-menu">
+							<nav>
+								<ul>
+									<li class="active menu-item"><a href="/dashboard">DASHBOARD</a>
+										<!-- <ul class="sub-menu"> -->
+											<li><a href="/"></a></li>
+
+										<!-- </ul> -->
+									</li>
+									<li class="menu-item"><a href="/productadd">ADD PRODUCT</a></li>
+
+
+													<li><a href="/adminProd">PRODUCT</a></li>
+													<!-- <li><a href="/login-register">Login | Register</a></li> -->
+
+
+									<!-- <li><a href="/contact">CONTACT</a></li> -->
+								</ul>
+							</nav>
+						</div>
+						<!-- end of navigation section -->
+					</div>
+					<div class="col-12">
+						<!-- Mobile Menu -->
+						<div class="mobile-menu d-block d-lg-none"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--=======  End of header bottom  =======-->
+	</header>
+	<!--=====  End of Header  ======-->
+
+    <!--=============================================
+    =            breadcrumb area         =
+    =============================================-->
+
+    <div class="breadcrumb-area mb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrumb-container">
+                        <ul>
+                            <li><a href="index1.ejs"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="active">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!--=====  End of breadcrumb area  ======-->
+
+
+	<!--=============================================
+	=            Contact page content         =
+	=============================================-->
+
+	<div class="page-content mb-50">
+
+				</div>
+				<div class="col-lg-9 col-md-8 pl-100 pl-xs-15">
+					<!--=======  contact form content  =======-->
+
+					<div class="contact-form-content">
+						<h3 class="contact-page-title">Add product</h3>
+
+						<div class="contact-form">
+							<form  id="contact-form" action="/products" method="POST">
+								<div class="form-group">
+									<label>Product <span class="required">*</span></label>
+									<input name="product" type="text" name="customerName" id="customername" required>
+								</div>
+								<div class="form-group">
+									<label>Quantity <span class="required">*</span></label>
+									<input name="Quantity" type="number" name="customerEmail" id="customerEmail" required>
+								</div>
+								<div class="form-group">
+									<label>Price</label>
+									<input name="Price" type="currency" name="contactSubject" id="contactSubject" required>
+								</div>
+								<div class="form-group">
+									<label>Category</label>
+									<input name="Category" type="text" name="categorySubject" id="categorySubject" required>
+								</div>
+								<div class="form-group">
+									<label>product image</label>
+
+									<input name="productImage" name="contactMessage" id="contactMessage" required>
+								</div>
+								<div class="form-group">
+									<label>Description</label>
+									<textarea name="description" id="descriptionMessage" required></textarea>
+<<<<<<< HEAD
+
+                </div>
+=======
+
+                				</div>
+
+                </div>
+
+>>>>>>> 6b1a5855e2479a922dbdef6b324977259977934b
+								<div class="form-group">
+									<input type="submit" value="submit" class="contact-form-btn" >
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<!--=======  End of contact form content =======-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--=====  End of Contact page content  ======-->
+
+
+	<!--=============================================
+	=            Footer         =
+	=============================================-->
+
+	<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2021</span>
+        </div>
+    </div>
+</footer>
+
+	<!--=====  End of Footer  ======-->
+
+
+	<!-- scroll to top  -->
+	<a href="#" class="scroll-top"></a>
+	<!-- end of scroll to top -->
+
+	<!-- JS
+	============================================ -->
+	<!-- jQuery JS -->
+	<script src="./js/vendor/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="./js/popper.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- Plugins JS -->
+	<script src="./js/plugins.js"></script>
+
+	<!-- Main JS -->
+	<script src="./js/main.js"></script>
+
+	<!-- AJAX mail JS -->
+	<script src="./js/ajax-mail.js"></script>
+
+
+</body>
+
+</html>
